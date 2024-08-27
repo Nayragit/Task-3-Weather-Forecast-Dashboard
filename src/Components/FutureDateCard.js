@@ -19,7 +19,7 @@ const FutureDateCard = ({date, weatherDataList}) => {
   return (
     <div className='future-date-card'>
       {epochToDayOfWeekUTC(weatherDataList[0].dt)}
-      <img src={`https://openweathermap.org/img/wn/${icon}@2x.png`} ></img>
+      <img alt="weather-icon" src={`https://openweathermap.org/img/wn/${icon}@2x.png`} ></img>
       {weatherDataList[0].weather[0].main}
       <p>Temp: {avgTemp}</p>
       <p>Max temp: {maxTemp}</p>
