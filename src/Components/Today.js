@@ -67,7 +67,7 @@ const Today = () => {
                 <div className="content">
                     <div className="today-content">
                         <div className="weather-icon">
-                        <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} />
+                        <img alt="weather-icon" src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} />
                         <p>{weatherData.weather[0].main}</p>
                         </div>
                         <h1 className="Location">{searchText}</h1>
